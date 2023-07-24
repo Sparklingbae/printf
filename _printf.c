@@ -6,6 +6,7 @@
  * @flags: Calculate active flags.
  * @precision: Precision specification
  * @size: Size specifier accordingly
+ * @width: Width of the print
  * Return: Printed char buffer
  */
 int _print(const char *fmt, va_list list,
@@ -21,7 +22,7 @@ int _print(const char *fmt, va_list list,
 	};
 	for (i = 0; fmt_types[i].fmt != '\0'; i++)
 		if (fmt[*ind] == fmt_types[i].fmt)
-			return (fmt_types[i].fn(list, buffer, flags, width, precision, size));
+			return (fmt_types[i].fn(list, setbuffer, flags, width, precision, size));
 
 	if (fmt_types[i].fmt == '\0')
 	{
