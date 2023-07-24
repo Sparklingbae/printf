@@ -59,7 +59,7 @@ int print_string(va_list types, char buffer[],
 		if (flags & F_MINUS)
 		{
 			write(1, &str[0], length);
-			for (j = width - length; i > 0; j--)
+			for (j = width - length; j > 0; j--)
 				write(1, " ", 1);
 			return (width);
 		}
@@ -173,7 +173,7 @@ int print_binary(va_list types, char buffer[],
 		m /= 2;
 		a[j] = (n / m) % 2;
 	}
-	for (j = 0, sum = 0, count = 0; j < 32; i++)
+	for (j = 0, sum = 0, count = 0; j < 32; j++)
 	{
 		sum += a[j];
 		if (sum || j == 31)
