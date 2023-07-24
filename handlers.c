@@ -2,9 +2,9 @@
 
 /************************* WRITE HANDLE *************************/
 /**
- * handle_write_char - Prints a string
+ * handle_write_char - Printing a string
  * @c: char types.
- * @buffer: Buffer array to handle print
+ * @buffer: Buffer array to handle printing
  * @flags:  Calculates active flags.
  * @width: get width.
  * @precision: precision specifier
@@ -50,9 +50,9 @@ int handle_write_char(char c, char buffer[],
  * @is_negative: Lista of arguments
  * @ind: char types.
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width.
- * @precision: precision specifier
+ * @flags:  Calculating active flags
+ * @width: getting width.
+ * @precision: A precision specifier
  * @size: Size specifier
  *
  * Return: Number of chars printed.
@@ -79,15 +79,15 @@ int write_number(int is_negative, int ind, char buffer[],
 }
 
 /**
- * write_num - Write a number using a bufffer
- * @ind: Index at which the number starts on the buffer
+ * write_num - Writing a number using a bufffer
+ * @ind: Index to which the number starts on the buffer
  * @buffer: Buffer
  * @flags: Flags
  * @width: width
  * @prec: Precision specifier
  * @length: Number length
  * @padd: Pading char
- * @extra_c: Extra char
+ * @extra_c: Extra char value
  *
  * Return: Number of printed chars.
  */
@@ -138,8 +138,8 @@ int write_num(int ind, char buffer[],
 }
 
 /**
- * write_unsgnd - Writes an unsigned number
- * @is_negative: Number indicating if the num is negative
+ * write_unsgnd - To Writes an unsigned number
+ * @is_negative: A Number indicating if the num is negative
  * @ind: Index at which the number starts in the buffer
  * @buffer: Array of chars
  * @flags: Flags specifiers
@@ -195,9 +195,9 @@ int write_unsgnd(int is_negative, int ind,
 }
 
 /**
- * write_pointer - Write a memory address of the pointer
+ * write_pointer - A memory address of the pointer
  * @buffer: Arrays of chars accordingly
- * @ind: Index at which the number, starts in the buffer.
+ * @ind: Index at which the number starts in the buffer.
  * @length: Length of numbers
  * @width: Width specifier
  * @flags: Flags specifier.
